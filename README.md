@@ -1,8 +1,5 @@
-# ✨ Full Stack Realtime Chat App ✨
+# ✨ Ping Me ✨
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
-
-[Video Tutorial on Youtube](https://youtu.be/ntKkVrQqBYY)
 
 Highlights:
 
@@ -10,33 +7,32 @@ Highlights:
 - 🎃 Authentication && Authorization with JWT
 - 👾 Real-time messaging with Socket.io
 - 🚀 Online user status
-- 👌 Global state management with Zustand
 - 🐞 Error handling both on the server and on the client
-- ⭐ At the end Deployment like a pro for FREE!
-- ⏳ And much more!
 
-### Setup .env file
+
+### How to Run?
+### Setup .env file in the backend directory
 
 ```js
-MONGODB_URI=...
+MONGODB_URI="add your database URL here"
 PORT=5001
-JWT_SECRET=...
+JWT_SECRET="add the JWT secret here" //(can be generate in console using : node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"")
 
-CLOUDINARY_CLOUD_NAME=...
-CLOUDINARY_API_KEY=...
-CLOUDINARY_API_SECRET=...
+CLOUDINARY_CLOUD_NAME="add you cloudinary cloud name here"
+CLOUDINARY_API_KEY="add the API KEY here "
+CLOUDINARY_API_SECRET="add the Secret here"
 
 NODE_ENV=development
 ```
 
-### Build the app
+### Build the app (Backend)
 
 ```shell
-npm run build
+npm run dev
 ```
 
-### Start the app
+### Start the app (Frontend)
 
 ```shell
-npm start
+npm run dev
 ```
